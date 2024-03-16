@@ -22,9 +22,9 @@ void addProduct(vector<Product>& productList)
     cin >> id;
     cin.ignore();
     cout << "Podaj Nazwe produktu: ";
-    getline(cin, name);
+    cin >> name;
     cout << "Podaj opis produktu: ";
-    getline(cin, description);
+    cin>>description;
     cout << " Podaj cene produktu: ";
     cin >> price;
 
