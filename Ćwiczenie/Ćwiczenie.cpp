@@ -53,7 +53,7 @@ void program()
 {
     vector<Product> productList;
 
-    string input;
+    int input;
     while (true)
     {
         cout << "Wybierz opcje: " << endl;
@@ -61,23 +61,22 @@ void program()
         cout << "2. Dodaj produkt" << endl;
         cout << "3.Usun produkt" << endl;
         cout << "Wybierz: ";
-        getline(cin, input);
+        cin >> input;
 
-        if (input == "1")
+        switch (input)
         {
+        case 1:
             displayAllProducts(productList);
-        }
-        else if (input == "2")
-        {
+            break;
+        case 2:
             addProduct(productList);
-        }
-        else if (input == "3")
-        {
+            break;
+        case 3:
             deleteProduct(productList);
-        }
-        else
-        {
+            break;
+        default:
             cout << "Niepoprawny wybor. Sprobuj ponownie." << endl;
+            break;
         }
     }
 }
