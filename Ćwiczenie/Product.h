@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 using namespace std;
 class Product
 {
@@ -9,6 +10,14 @@ private:
     long price;
 
 public:
+    string toString()
+    {
+        return "ID:" + to_string(id) + ",description:" + description;
+    }
+    string toString()
+    {
+        return "price" + to_string(price);
+    }
     Product(int id, string name, string description, long price)
     {
         this->id = id;
