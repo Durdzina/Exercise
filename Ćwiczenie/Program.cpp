@@ -34,7 +34,7 @@ void Program::start()
 }
 void Program::displayProducts()
 {
-    cout << "Lista wszystkich produktów: " << endl;
+    cout << "Lista wszystkich produktow: " << endl;
     for (int i=0; i<productList.size();i++)
     {
         cout << productList[i].toString();
